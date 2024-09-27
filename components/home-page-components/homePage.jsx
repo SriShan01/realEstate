@@ -120,11 +120,11 @@ const HomePage = () => {
             <div className="flex gap-12">
               <div className="flex flex-col gap-4">
                 <h2 className="text-4xl title-font font-bold">19K+</h2>
-                <p className="text-lg">Premium houses</p>
+                <p className="text-lg font-bold">Premium houses</p>
               </div>
               <div className="flex flex-col gap-4">
                 <h2 className="text-4xl title-font font-bold">5000+</h2>
-                <p className="text-lg">Premium houses</p>
+                <p className="text-lg font-bold">Premium houses</p>
               </div>
             </div>
             {/* <div className="flex gap-12 max-sm:flex-wrap  justify-center">
