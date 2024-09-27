@@ -136,7 +136,7 @@ const Footer = () => {
         <div className="flex flex-col items-start h-auto justify-between gap-16 w-2/4 max-lg:w-full pr-10 max-sm:pr-0">
           <div className="flex flex-col text-lg items-start  justify-between gap-10 ">
             <a href="/">
-              <img src="/Homyz-logo.png" className="w-36" alt="Homyz-logo" />
+              <img src="/Homyz-logo.png" className="w-36" alt="Lot8-logo" />
             </a>
             <p style={{ color: "#696969" }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
@@ -186,7 +186,7 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <p style={{ color: "#696969" }}>© Homyz. All Rights Reserved 2023.</p>
+          <p style={{ color: "#696969" }}>© Lot8. All Rights Reserved 2024.</p>
         </div>
 
         <div
