@@ -139,7 +139,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                                     </h2>
                                   </Link>
                                   <h3>
-                                    PKR {formatCompactNumber(e.price)}/Month
+                                    AUD {formatCompactNumber(e.price)}/Month
                                   </h3>
                                   <p
                                     onClick={(event) => {
@@ -178,7 +178,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                             <div className="flex justify-between">
                               <h2>Total</h2>
                               <p>
-                                PKR {formatCompactNumber(e.quantity * e.price)}
+                              AUD {formatCompactNumber(e.quantity * e.price)}
                               </p>
                             </div>
                           </div>
@@ -192,7 +192,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   <div className="flex justify-between items-center">
                     <h2>Subtotal</h2>
                     <p className="total text-red-500">
-                      PKR {formatCompactNumber(subTotal)}
+                    AUD {formatCompactNumber(subTotal)}
                     </p>
                   </div>
                   <Button
@@ -262,12 +262,11 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              to="/Services"
             >
               Our Services
             </Link>
             <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
-              Show Cases
+              Notifications
               <div className="showcase-list hidden absolute cursor-default -left-4 ">
                 <ul
                   style={{ border: "1px solid #e9e9e9" }}
@@ -283,7 +282,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                       className="hover:text-red-500 transition-all"
                       to="/showcases/showcase1"
                     >
-                      Show Case 1
+                      Notification 1
                     </Link>
                   </li>
                   <li className="listItem flex items-center gap-2">
@@ -296,7 +295,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                       className="hover:text-red-500 transition-all"
                       to="/showcases/showcase2"
                     >
-                      Show Case 2
+                      Notification 2
                     </Link>
                   </li>
                 </ul>
@@ -309,7 +308,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             >
               About
             </Link>
-            <div
+            {/* <div
               className="relative cursor-pointer  transition-all"
               onClick={() => {
                 setModal(true);
@@ -328,7 +327,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                 ""
               )}
               <FaShoppingCart />
-            </div>
+            </div> */}
 
             <Link onClick={scrollToTop} to="/contact">
               <Button
@@ -440,7 +439,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               }}
               className="flex justify-between hover:text-red-500 max-sm:hover:text-black transition-all items-center cursor-pointer"
             >
-              <p className="transition-all">Show Cases</p>
+              <p className="transition-all">Notifications</p>
               <FaAngleDown
                 className={`${
                   showcaseDropDown ? "-rotate-180" : "rotate-0"

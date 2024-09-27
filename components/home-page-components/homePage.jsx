@@ -56,21 +56,38 @@ const HomePage = () => {
           >
             Discover Most Suitable Property
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             variants={animationVariants.fadeLeft}
             className="text-xl max-lg:mx-auto max-w-md  "
           >
             Our mission is to engage in issues that are of concern to
             individuals
-          </motion.p>
+          </motion.p> */}
+          <div className="max-w-md w-full mx-auto flex flex-col items-center">
+            <div className="w-full flex justify-end">
+              <Button
+                content={"Buy"}
+                fontSize={"text-md"}
+                padding={"px-4 py-2 ml-4"}
+                furtherClasses={"bg-red-500 text-white rounded-md border-none"}
+              />
+              <Button
+                content={"Rent"}
+                fontSize={"text-md"}
+                padding={"px-4 py-2 ml-4"}
+                furtherClasses={"bg-red-500 text-white rounded-md border-none"}
+              />
+            </div>
+          </div>
+
           <motion.div
             variants={animationVariants.fadeLeft}
             id="search-inp"
-            className="max-w-xl max-lg:mx-auto max-lg:w-full relative"
+            className="max-w-lg w-full relative flex flex-col items-center justify-center mx-auto"
           >
             <FaPeriscope className="text-red-500 text-2xl absolute left-2 top-5 " />
             <input
-              placeholder="Search..."
+              placeholder="Properties by Postcode Suburb or City"
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   handleSearch();
@@ -413,7 +430,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           style={{ maxWidth: 1200 }}
           className="mx-auto destination-section p-10 max-md:px-5  pb-28"
         >
@@ -445,11 +462,11 @@ const HomePage = () => {
               }
             })}
           </div>
-        </div>
+        </div> */}
       </div>
       {/* appreciation section end */}
       {/* review section start */}
-      <div className="bg-gray-100">
+      {/* <div className="bg-gray-100">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-16 p-10 max-md:px-5 py-28 "
@@ -507,10 +524,10 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* review section end */}
       {/* partner brand section start */}
-      <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
+      {/* <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-10 p-10 max-md:px-5  "
@@ -534,7 +551,7 @@ const HomePage = () => {
             })}
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* partner brand section end */}
     </div>
   );

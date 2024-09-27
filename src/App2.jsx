@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <Services />
         <Footer />
       </>
     ),
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar navBar2={true} />
-        <HomePage />
+        <Results />
         <Footer />
       </>
     ),
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <Service />
         <Footer />
       </>
     ),
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       <>
         <NavBar showCase1Page={true} />
 
-        <HomePage />
+        <ShowCase1 />
         <Footer />
       </>
     ),
@@ -72,7 +72,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <ShowCase2 />
         <Footer />
       </>
     ),
@@ -82,7 +82,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <Featured />
         <Footer />
       </>
     ),
@@ -92,7 +92,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <Popular />
         <Footer />
       </>
     ),
@@ -102,7 +102,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar navBar2={true} />
-        <HomePage />
+        <Products />
         <Footer />
       </>
     ),
@@ -112,7 +112,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <AboutProject />
         <Footer />
       </>
     ),
@@ -122,7 +122,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <About />
         <Footer />
       </>
     ),
@@ -132,20 +132,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar />
-        <HomePage />
+        <Contact />
         <Footer />
       </>
     ),
   },
   {
     path: "*",
-    element: (
-      <>
-        <NavBar />
-        <HomePage />
-        <Footer />
-      </>
-    ),
+    element: <Error404 />,
   },
 ]);
 
