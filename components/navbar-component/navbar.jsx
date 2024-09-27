@@ -178,7 +178,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                             <div className="flex justify-between">
                               <h2>Total</h2>
                               <p>
-                              AUD {formatCompactNumber(e.quantity * e.price)}
+                                AUD {formatCompactNumber(e.quantity * e.price)}
                               </p>
                             </div>
                           </div>
@@ -192,7 +192,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   <div className="flex justify-between items-center">
                     <h2>Subtotal</h2>
                     <p className="total text-red-500">
-                    AUD {formatCompactNumber(subTotal)}
+                      AUD {formatCompactNumber(subTotal)}
                     </p>
                   </div>
                   <Button
@@ -457,7 +457,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                 className="hover:text-red-500 transition-all"
                 to={"/showcases/showcase1"}
               >
-                Show Cases 1
+                Notification 1
               </Link>
               <Link
                 onClick={() => {
@@ -467,7 +467,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                 to={"/showcases/showcase2"}
                 className="hover:text-red-500 transition-all"
               >
-                Show Cases 2
+                Notification 2
               </Link>
             </ul>
             <div

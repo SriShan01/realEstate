@@ -48,7 +48,7 @@ const HomePage = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.2 }}
           style={{ maxWidth: 1200 }}
-          className="mx-auto w-full text-white px-10 max-sm:px-5 flex flex-col max-lg:items-center max-lg:text-center gap-12"
+          className="mx-auto w-full text-white px-10 max-sm:px-5 flex flex-col max-lg:items-center max-lg:text-center gap-5"
         >
           <motion.h1
             variants={animationVariants.fadeLeft}
