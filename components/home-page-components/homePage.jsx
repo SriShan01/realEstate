@@ -63,22 +63,28 @@ const HomePage = () => {
             Our mission is to engage in issues that are of concern to
             individuals
           </motion.p> */}
-          <div className="max-w-md w-full mx-auto flex flex-col items-center">
-            <div className="w-full flex justify-end">
-              <Button
-                content={"Buy"}
-                fontSize={"text-md"}
-                padding={"px-4 py-2 ml-4"}
-                furtherClasses={"bg-red-500 text-white rounded-md border-none"}
-              />
-              <Button
-                content={"Rent"}
-                fontSize={"text-md"}
-                padding={"px-4 py-2 ml-4"}
-                furtherClasses={"bg-red-500 text-white rounded-md border-none"}
-              />
+          <motion.div variants={animationVariants.fadeLeft}>
+            <div className="max-w-md w-full mx-auto flex flex-col items-center">
+              <div className="w-full flex justify-end">
+                <Button
+                  content={"Buy"}
+                  fontSize={"text-md"}
+                  padding={"px-4 py-2 ml-4"}
+                  furtherClasses={
+                    "bg-red-500 text-white rounded-md border-none"
+                  }
+                />
+                <Button
+                  content={"Rent"}
+                  fontSize={"text-md"}
+                  padding={"px-4 py-2 ml-4"}
+                  furtherClasses={
+                    "bg-red-500 text-white rounded-md border-none"
+                  }
+                />
+              </div>
             </div>
-          </div>
+          </motion.div>
 
           <motion.div
             variants={animationVariants.fadeLeft}
@@ -121,7 +127,7 @@ const HomePage = () => {
                 <p className="text-lg">Premium houses</p>
               </div>
             </div>
-            <div className="flex gap-12 max-sm:flex-wrap  justify-center">
+            {/* <div className="flex gap-12 max-sm:flex-wrap  justify-center">
               <div className="flex justify-start items-center gap-2">
                 <img className="w-9" src="/grafton.png" alt="img" />
                 <h2 className="text-2xl">Grafton</h2>
@@ -134,7 +140,7 @@ const HomePage = () => {
                 <img className="w-9" src="/tundratown.png" alt="img" />
                 <h2 className="text-2xl">Tundratown</h2>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
 
@@ -155,7 +161,7 @@ const HomePage = () => {
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
                 We build quality real estate projects
-                <span className=" text-red-500 title-font "> since 1998</span>
+                <span className=" text-red-500 title-font "> since 2015</span>
               </h2>
             </motion.div>
           </div>
